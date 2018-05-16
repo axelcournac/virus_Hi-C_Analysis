@@ -1,4 +1,4 @@
-# virus_HiC_ANALYSIS
+# Virus Hi-C Analysis
 # Codes and functions for 
 ### Table of contents
 
