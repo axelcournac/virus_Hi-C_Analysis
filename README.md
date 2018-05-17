@@ -38,7 +38,7 @@ A SRA executable called fastq-dump from SRA can be used to extract and split bot
 
 #### Alignment
 
-For the alignement step, we will use the sofware Bowtie2 and an iterative procedure like the one of [DADE] (). 
+For the alignement step, we will use the sofware Bowtie2 and an iterative procedure like the one of [DADE] (https://github.com/scovit/dade). 
 
 We process the pairs of reads so that every read has a mapping quality superior to 30. 
 Here, some lines that can be used to do this task:
