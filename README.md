@@ -91,3 +91,8 @@ The first argument corresponds to the path of the file named output_alignment_id
 The second argument is the size of the bin, here 5000 bp. We generally use this resolution for the whole study which is a good compromise between resolution and signa robustness.
 The third argument is the name of the prefixe for the file of the contacts maps. 
 
+
+![alt tag](https://github.com/axelcournac/EColi_analysis/blob/master/pictures/WT_rep1_5000_Natural.png)
+
+
+
