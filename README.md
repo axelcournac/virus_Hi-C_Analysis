@@ -1,4 +1,3 @@
-# Virus Hi-C Analysis
 # Codes and functions for the analysis of virus genome contacts with human chromosomes
 ### Table of contents
 
