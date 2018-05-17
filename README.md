@@ -92,7 +92,7 @@ The second argument is the size of the bin, here 5000 bp. We generally use this 
 The third argument is the name of the prefixe for the file of the contacts maps. 
 
 
-![alt tag](https://github.com/axelcournac/virus_Hi-C_Analysis/blob/master/pictures/chr3_CM_all_runs_HBVayw_400kb_HBVayw_0.pdf)
+![alt tag](https://github.com/axelcournac/virus_Hi-C_Analysis/blob/master/pictures/chr3_CM_all_runs_HBVayw_400kb_HBVayw_0.png)
 
 
 
