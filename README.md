@@ -1,11 +1,10 @@
 # Virus Hi-C Analysis
-# Codes and functions for 
+# Codes and functions for the analysis of virus genome contacts with human chromosomes
 ### Table of contents
 
-* [Dependencies](https://github.com/axelcournac/EColi_analysis/blob/master/README.md#dependencies)
-* [Raw data extraction and alignment](https://github.com/axelcournac/EColi_analysis/blob/master/README.md#raw-data-extraction-and-alignment)
-* [Building of the contacts map](https://github.com/axelcournac/EColi_analysis/blob/master/README.md#building-of-the-contacts-map)
-* [Correlation with other data](https://github.com/axelcournac/EColi_analysis/blob/master/README.md#correlation-with-other-data)
+* [Dependencies](https://github.com/axelcournac/virus_HiC_ANALYSIS/edit/master/README.md#dependencies)
+* [Raw data extraction and alignment](https://github.com/axelcournac/virus_HiC_ANALYSIS/edit/master/README.md#raw-data-extraction-and-alignment)
+* [Building of the contacts map](https://github.com/axelcournac/virus_HiC_ANALYSIS/edit/master/README.md#building-of-the-contacts-map)
 
 
 ### Dependencies
@@ -33,7 +32,7 @@ Data can be dowloaded on Short Read Archive server at the following address **ht
 A SRA executable called fastq-dump from SRA can be used to extract and split both mates of a library (to use it, you can go with your terminal to the directory containg the executables files by using the bash command cd).Then the program can be used like this:  /fastq-dump library_identification --split-3 -O /path_to_a_directory
  
 ```bash
-./fastq-dump SRR639031 --split-3 -O /run/media/axel/EColi_data/
+./fastq-dump SRR639031 --split-3 -O /run/media/axel/human_data/
 ```
 
 #### Alignment
@@ -79,7 +78,7 @@ chr1 2856270 16 chr1 2856124 0
 chr1 4134782 16 chr1 4134678 0
 ```
 
-chr1 corresponds here to the chromosome of *Escherichi coli* genome. We used hg19 reference genome. We name this file output_alignment_idpt.dat.ind3.
+chr1 corresponds here to the chromosome of human genome. We used hg19 reference genome. We name this file output_alignment_idpt.dat.ind3.
 
 We then assigned eahc read to its corresponding restriction fragment as described previously in [https://github.com/axelcournac/3C_tutorial](https://github.com/axelcournac/3C_tutorial). 
 
@@ -87,7 +86,7 @@ We then assigned eahc read to its corresponding restriction fragment as describe
 ## Building of the contacts map
 To build the contact map and and filtered the non informative events, we use the python code 3Cevents_MATRICE.py [`3Cevents_MATRICE.py`](python_codes/3Cevents_MATRICE.py):
 ```bash
-python 3Cevents_MATRICE.py output_alignment_idpt.dat.ind3 5000 WT_rep1_5kb
+python Matrice_Creator_ANNOTATIONS10_4_several.py 1 100000 HBVayw HBX_mutant_100kb 0 /media/axel/RSG53/CONCATENATED_PIERRICK_DATA_ITERATIV/output_alignment_idpt_BC78_ACTT_XMutant_fused20runs_cap_BC78_capBC78.indices.filtered.pcr5
 ```
 The first argument corresponds to the path of the file named output_alignment_idpt.dat.ind3 containing the informations of the mapped pairs of reads. 
 The second argument is the size of the bin, here 5000 bp. We generally use this resolution for the whole study which is a good compromise between resolution and signa robustness.
