@@ -22,9 +22,7 @@ For windows, you can have a look to https://www.python.org/downloads/windows/. T
 #### External programs
 
 * `Bowtie2 ` / [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
-* `Pymol` / [Pymol](https://www.pymol.org/)
 * `R` / [R](https://cran.r-project.org/)
-* `Shrec3D` / [Shrec3D](https://sites.google.com/site/julienmozziconacci/)
 
 
 
@@ -40,7 +38,7 @@ A SRA executable called fastq-dump from SRA can be used to extract and split bot
 
 #### Alignment
 
-For the alignement step, we will use the sofware Bowtie2 and an iterative procedure like the one of [hiclib] (https://bitbucket.org/mirnylab/hiclib). 
+For the alignement step, we will use the sofware Bowtie2 and an iterative procedure like the one of [DADE] (). 
 
 We process the pairs of reads so that every read has a mapping quality superior to 30. 
 Here, some lines that can be used to do this task:
@@ -81,7 +79,7 @@ chr1 2856270 16 chr1 2856124 0
 chr1 4134782 16 chr1 4134678 0
 ```
 
-chr1 corresponds here to the chromosome of *Escherichi coli* genome. We used  MG1655 reference genome (GenBank: U00096.2, total length 4639675). We name this file output_alignment_idpt.dat.ind3.
+chr1 corresponds here to the chromosome of *Escherichi coli* genome. We used hg19 reference genome. We name this file output_alignment_idpt.dat.ind3.
 
 We then assigned eahc read to its corresponding restriction fragment as described previously in [https://github.com/axelcournac/3C_tutorial](https://github.com/axelcournac/3C_tutorial). 
 
