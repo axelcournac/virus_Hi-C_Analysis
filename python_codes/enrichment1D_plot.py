@@ -5,6 +5,7 @@ Created on Thu Jan 12 15:35:52 2017
 To plot and study signals from PHH data to see if the HBV is located at specific places.
 5: on average autour des positions de contacts du virus 
 Janvier 2018: on réadapte un peu le script pour prendre directement les fichiers d'output d'alignement
+histo_signals_PHH622_janvier2018.py
 """
 import numpy as np
 import matplotlib
